@@ -1,13 +1,103 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+/* font-family: 'Noto Sans', sans-serif; */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* ==================================== */
+/* Custom properties and general styles */
+/* ==================================== */
+
+:root {
+  --ff-main: 'Noto Sans', sans-serif;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --fs-07: 0.438rem;
+  --fs-08: 0.5em;
+  --fs-09: 0.563em;
+  --fs-10: 0.625rem;
+  --fs-12: 0.75rem;
+  --fs-13: 0.813rem;
+  --fs-14: 0.875rem;
+  --fs-15: 0.938rem;
+  --fs-16: 1rem;
+  --fs-18: 1.125rem;
+  --fs-20: 1.25rem;
+  --fs-22: 1.375rem;
+  --fs-24: 1.5rem;
+  --fs-26: 1.625rem;
+  --fs-28: 1.75rem;
+  --fs-30: 1.875em;
+  --fs-32: 2rem;
+  --fs-36: 2.25rem;
+  --fs-40: 2.5rem;
+  --fs-48: 3rem;
+  --fs-56: 3.5rem;
+  --fs-60: 3.75rem;
+  --fs-64: 4rem;
+  --fs-72: 4.5rem;
+  --fs-80: 5rem;
+  --fs-100: 6.25em;
+
+  /* Text */
+  --clr-black-text: hsla(0, 0%, 0%, 1);
+  --clr-dark-text: hsla(0, 0%, 25%, 1);
+  --clr-gray-1-text: hsla(0, 0%, 20%, 1);
+  --clr-gray-2-text: hsla(0, 0%, 31%, 1);
+  --clr-gray-3-text: hsla(0, 0%, 51%, 1);
+  --clr-greyed-out-text: hsla(0, 0%, 62%, 1);
+  --clr-blue-text: hsla(231, 99%, 62%, 1);
+
+  /* Backgrounds */
+  --clr-blue: hsl(224, 100%, 58%);
+
+  --clr-disabled: hsl(0, 0%, 23%);
+  --clr-soft-grey: hsla(0, 0%, 88%, 1);
+  --clr-soft-grey-hover: hsla(0, 0%, 80%, 1);
+  --clr-dark-grey: hsl(0, 0%, 68%);
+  --clr-dark-grey-hover: hsl(0, 0%, 60%);
+  --clr-soft-blue: hsla(224, 100%, 58%, 0.1);
+  --clr-blue-hover: hsl(231, 99%, 54%);
+  --clr-outline-hover: hsl(230, 71%, 93%);
+  --clr-blue-2-semi-trans: hsla(224, 100%, 58%, 0.1);
+  --clr-blue-3: hsla(223, 100%, 40%, 1);
+  --clr-red: hsla(0, 65%, 51%, 1);
+  --clr-red-hover: hsla(0, 65%, 42%, 1);
+  --clr-green: hsl(140, 75%, 34%);
+  --clr-green-hover: hsl(140, 75%, 26%);
+
+  --clr-dark-green: hsla(199, 18%, 33%, 1);
+  --clr-darkest-green: hsla(198, 35%, 17%, 1);
+  --clr-white: hsl(0, 0%, 100%);
 }
+
+body {
+  background-color: var(--clr-white);
+  color: var(--clr-gray-1-text);
+  font-family: var(--ff-main);
+  font-size: var(--fs-16);
+  font-weight: var(--fw-regular);
+  line-height: 1.8333;
+  text-align: center;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ================== */
+/* Typography */
+/* ================== */

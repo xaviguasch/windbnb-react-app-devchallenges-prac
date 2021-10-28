@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { DATA } from '../assets/stays.js'
 import Apartment from './Apartment'
 
 import './Gallery.css'
@@ -7,9 +8,24 @@ import './Gallery.css'
 const Gallery = (props) => {
   return (
     <div>
-      <h2>Gallery</h2>
+      <h2>Stays in Findland</h2>
 
-      <Apartment />
+      <p>num of stays</p>
+
+      {DATA.map((d) => (
+        <Apartment
+          key={d.title}
+          city={d.city}
+          country={d.country}
+          superHost={d.superHost}
+          title={d.title}
+          rating={d.rating}
+          maxGuests={d.maxGuests}
+          type={d.type}
+          beds={d.beds}
+          photo={d.photo}
+        />
+      ))}
     </div>
   )
 }
