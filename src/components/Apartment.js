@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './Apartment.css'
+
 const Apartment = ({
   city,
   country,
@@ -13,15 +15,19 @@ const Apartment = ({
 }) => {
   return (
     <div className='apartment'>
-      <img src={photo} alt='apartment' />
-      <span className='super-host'>{superHost && 'super host'}</span>
-      <p className='description'>
-        {type}. {beds} beds
-      </p>
-      <p>
-        <span class='material-icons-round'>star</span>{' '}
-        <span className='rating'>{rating}</span>
-      </p>
+      <img className='apt-img' src={photo} alt='apartment' />
+      <div className='apt-details'>
+        <div className='super-and-description'>
+          {superHost && <span className='super-host'>super host</span>}
+          <p className='description'>
+            {type}. {beds} beds
+          </p>
+        </div>
+        <p className='star-rating'>
+          <span class='material-icons-round'>star</span>{' '}
+          <span className='rating'>{rating}</span>
+        </p>
+      </div>
       <p className='info'>{title}</p>
     </div>
   )

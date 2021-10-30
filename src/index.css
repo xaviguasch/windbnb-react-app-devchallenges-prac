@@ -58,6 +58,8 @@
 
   /* Backgrounds */
   --clr-white: hsl(0, 0%, 100%);
+
+  --clr-star-red: hsla(0, 79%, 63%, 0.72);
 }
 
 body {
@@ -66,7 +68,7 @@ body {
   font-family: var(--ff-main);
   font-size: var(--fs-16);
   font-weight: var(--fw-medium);
-  line-height: 1.8333;
+  line-height: 1.2;
   text-align: center;
 }
 
@@ -123,6 +125,16 @@ ul {
 .info {
   font-size: var(--fs-14);
   font-weight: var(--fw-semi-bold);
+}
+
+.signature {
+  font-size: var(--fs-12);
+  color: var(--clr-gray-2-text);
+}
+
+.signature a {
+  font-weight: var(--fw-bold);
+  color: inherit;
 }
 
 /* ================== */

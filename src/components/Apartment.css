@@ -1,0 +1,41 @@
+.apt-img {
+  height: 239px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.75em;
+}
+
+.apt-details {
+  margin-top: 1.15em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.super-and-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75em;
+}
+
+.star-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25em;
+}
+
+.material-icons-round {
+  font-size: var(--fs-20);
+  color: var(--clr-star-red);
+}
+
+.rating {
+  padding-top: 0.15em;
+}
+
+.info {
+  margin-top: 0.6em;
+  text-align: left;
+}

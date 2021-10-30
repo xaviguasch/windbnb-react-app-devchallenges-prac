@@ -10,25 +10,28 @@ const Gallery = (props) => {
   const [guests, setGuests] = useState(0)
 
   return (
-    <div>
-      <h2>Stays in Findland</h2>
+    <div className='Gallery'>
+      <div className='row'>
+        <h2 className='title'>Stays in Findland</h2>
+        <p className='found-stays'>num of stays</p>
+      </div>
 
-      <p>num of stays</p>
-
-      {DATA.map((d) => (
-        <Apartment
-          key={d.title}
-          city={d.city}
-          country={d.country}
-          superHost={d.superHost}
-          title={d.title}
-          rating={d.rating}
-          maxGuests={d.maxGuests}
-          type={d.type}
-          beds={d.beds}
-          photo={d.photo}
-        />
-      ))}
+      <div className='apartments'>
+        {DATA.map((d) => (
+          <Apartment
+            key={d.title}
+            city={d.city}
+            country={d.country}
+            superHost={d.superHost}
+            title={d.title}
+            rating={d.rating}
+            maxGuests={d.maxGuests}
+            type={d.type}
+            beds={d.beds}
+            photo={d.photo}
+          />
+        ))}
+      </div>
     </div>
   )
 }
