@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
-
-/* font-family: 'Noto Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Mulish:wght@400;800&display=swap');
 
 *,
 *::before,
@@ -15,10 +13,14 @@
 /* ==================================== */
 
 :root {
-  --ff-main: 'Noto Sans', sans-serif;
+  --ff-main: 'Montserrat', sans-serif;
+  --ff-secondary: 'Mulish', sans-serif;
 
   --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
   --fw-bold: 700;
+  --fw-extra-bold: 800;
 
   --fs-07: 0.438rem;
   --fs-08: 0.5em;
@@ -48,40 +50,19 @@
   --fs-100: 6.25em;
 
   /* Text */
-  --clr-black-text: hsla(0, 0%, 0%, 1);
-  --clr-dark-text: hsla(0, 0%, 25%, 1);
-  --clr-gray-1-text: hsla(0, 0%, 20%, 1);
-  --clr-gray-2-text: hsla(0, 0%, 31%, 1);
-  --clr-gray-3-text: hsla(0, 0%, 51%, 1);
-  --clr-greyed-out-text: hsla(0, 0%, 62%, 1);
-  --clr-blue-text: hsla(231, 99%, 62%, 1);
+  --clr-dark-text: hsla(0, 0%, 20%, 1);
+  --clr-placeholder-text: hsla(0, 0%, 74%, 1);
+  --clr-gray-1-text: hsla(0, 0%, 31%, 1);
+  --clr-gray-2-text: hsla(0, 0%, 51%, 1);
+  --clr-white-text: hsla(0, 0%, 95%, 1);
 
   /* Backgrounds */
-  --clr-blue: hsl(224, 100%, 58%);
-
-  --clr-disabled: hsl(0, 0%, 23%);
-  --clr-soft-grey: hsla(0, 0%, 88%, 1);
-  --clr-soft-grey-hover: hsla(0, 0%, 80%, 1);
-  --clr-dark-grey: hsl(0, 0%, 68%);
-  --clr-dark-grey-hover: hsl(0, 0%, 60%);
-  --clr-soft-blue: hsla(224, 100%, 58%, 0.1);
-  --clr-blue-hover: hsl(231, 99%, 54%);
-  --clr-outline-hover: hsl(230, 71%, 93%);
-  --clr-blue-2-semi-trans: hsla(224, 100%, 58%, 0.1);
-  --clr-blue-3: hsla(223, 100%, 40%, 1);
-  --clr-red: hsla(0, 65%, 51%, 1);
-  --clr-red-hover: hsla(0, 65%, 42%, 1);
-  --clr-green: hsl(140, 75%, 34%);
-  --clr-green-hover: hsl(140, 75%, 26%);
-
-  --clr-dark-green: hsla(199, 18%, 33%, 1);
-  --clr-darkest-green: hsla(198, 35%, 17%, 1);
   --clr-white: hsl(0, 0%, 100%);
 }
 
 body {
   background-color: var(--clr-white);
-  color: var(--clr-gray-1-text);
+  color: var(--clr-dark-text);
   font-family: var(--ff-main);
   font-size: var(--fs-16);
   font-weight: var(--fw-regular);

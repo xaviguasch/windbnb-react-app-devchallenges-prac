@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState } from 'react'
 
 import { DATA } from '../assets/stays.js'
 import Apartment from './Apartment'
@@ -6,6 +6,9 @@ import Apartment from './Apartment'
 import './Gallery.css'
 
 const Gallery = (props) => {
+  const [city, setCity] = useState('')
+  const [guests, setGuests] = useState(0)
+
   return (
     <div>
       <h2>Stays in Findland</h2>

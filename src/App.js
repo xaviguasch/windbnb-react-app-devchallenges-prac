@@ -1,3 +1,5 @@
+import React from 'react'
+
 import Gallery from './components/Gallery'
 import Search from './components/Search'
 
