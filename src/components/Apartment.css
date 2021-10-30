@@ -19,6 +19,12 @@
   gap: 0.75em;
 }
 
+.super-host {
+  border: 1px solid var(--clr-dark-text);
+  border-radius: 1em;
+  padding: 0.4em 0.75em;
+}
+
 .star-rating {
   display: flex;
   justify-content: center;

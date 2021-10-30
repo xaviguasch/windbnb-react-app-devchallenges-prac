@@ -12,7 +12,11 @@ const Search = () => {
   if (!expanded) {
     return (
       <div className='search' onClick={searchHandler}>
-        <h2>Search</h2>
+        <button className='btn btn--city'>City, Country</button>
+        <button className='btn btn--guests'>Add Guests</button>
+        <button className='btn btn--icon'>
+          <span class='material-icons-round'>search</span>
+        </button>
       </div>
     )
   }

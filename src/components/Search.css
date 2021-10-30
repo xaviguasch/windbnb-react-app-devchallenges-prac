@@ -1,3 +1,35 @@
 .search {
-  background: yellow;
+  margin-top: 2.5em;
+  display: flex;
+  justify-content: center;
+
+  margin: 2.5em 1.6875em 0;
+  border-radius: 1em;
+
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.search .btn {
+  width: 100%;
+  background: transparent;
+  border: none;
+}
+
+.search .btn--city,
+.search .btn--guests {
+  padding: 1em 1.15em;
+
+  color: var(--clr-dark-text);
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-14);
+  font-weight: var(--fw-regular);
+  border-right: 1px solid hsl(0, 0%, 95%);
+}
+
+.search .btn--guests {
+  color: var(--clr-placeholder-text);
+}
+
+.search .btn--icon {
+  width: 50%;
 }
