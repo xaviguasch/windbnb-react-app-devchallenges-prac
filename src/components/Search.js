@@ -5,12 +5,22 @@ import './Search.css'
 const Search = () => {
   const [expanded, setExpanded] = useState(false)
 
+  const setHidden = () => {
+    // Stops scrolling when the overlay is open
+    if (document.body.style.overflow !== 'hidden') {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'scroll'
+    }
+  }
+
   const searchHandler = () => {
+    setHidden()
     setExpanded(!expanded)
   }
 
-  if (!expanded) {
-    return (
+  return (
+    <div>
       <div className='search' onClick={searchHandler}>
         <button className='btn btn--city'>City, Country</button>
         <button className='btn btn--guests'>Add Guests</button>
@@ -18,13 +28,12 @@ const Search = () => {
           <span class='material-icons-round'>search</span>
         </button>
       </div>
-    )
-  }
 
-  return (
-    <div className='search' onClick={searchHandler}>
-      <h2>Search Expanded</h2>
-      <h3>It is expanded</h3>
+      {expanded && (
+        <div className='overlay'>
+          <button onClick={searchHandler}>close</button>
+        </div>
+      )}
     </div>
   )
 }
