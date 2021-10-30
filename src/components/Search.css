@@ -13,6 +13,7 @@
   width: 100%;
   background: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .search .btn--city,
@@ -40,6 +41,47 @@
   top: 0;
   left: 0;
 
+  padding: 1.125em 1em 0.5em;
+
   height: 80vh;
   width: 100%;
+}
+
+.ov__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ov__text {
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-12);
+}
+
+.btn--overlay {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.btn--overlay .material-icons-round {
+  padding-top: 0.25em;
+  color: var(--clr-dark-text);
+  font-size: var(--fs-20);
+}
+
+.search--overlay {
+  flex-direction: column;
+
+  margin: 1em 0;
+}
+
+.search--overlay .btn {
+  text-align: left;
+  padding-left: 1.625em;
+}
+
+.search--overlay .btn--city {
+  border-bottom: 1px solid hsl(0, 0%, 95%);
 }
