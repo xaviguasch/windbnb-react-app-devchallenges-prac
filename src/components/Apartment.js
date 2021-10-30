@@ -14,12 +14,15 @@ const Apartment = ({
   return (
     <div className='apartment'>
       <img src={photo} alt='apartment' />
-      <span>{superHost && 'SUPER HOST'}</span>
-      <p>
+      <span className='super-host'>{superHost && 'super host'}</span>
+      <p className='description'>
         {type}. {beds} beds
       </p>
-      <p>⭐ {rating}</p>
-      <p>{title}</p>
+      <p>
+        <span class='material-icons-round'>star</span>{' '}
+        <span className='rating'>{rating}</span>
+      </p>
+      <p className='info'>{title}</p>
     </div>
   )
 }

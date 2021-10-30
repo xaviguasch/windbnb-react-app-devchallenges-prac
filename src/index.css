@@ -51,9 +51,9 @@
 
   /* Text */
   --clr-dark-text: hsla(0, 0%, 20%, 1);
-  --clr-placeholder-text: hsla(0, 0%, 74%, 1);
   --clr-gray-1-text: hsla(0, 0%, 31%, 1);
   --clr-gray-2-text: hsla(0, 0%, 51%, 1);
+  --clr-placeholder-text: hsla(0, 0%, 74%, 1);
   --clr-white-text: hsla(0, 0%, 95%, 1);
 
   /* Backgrounds */
@@ -65,7 +65,7 @@ body {
   color: var(--clr-dark-text);
   font-family: var(--ff-main);
   font-size: var(--fs-16);
-  font-weight: var(--fw-regular);
+  font-weight: var(--fw-medium);
   line-height: 1.8333;
   text-align: center;
 }
@@ -81,4 +81,50 @@ ul {
 
 /* ================== */
 /* Typography */
+/* ================== */
+
+.search {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-14);
+  font-weight: var(--fw-400);
+}
+
+.search--guests {
+  color: var(--clr-placeholder-text);
+}
+
+.title {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-18);
+}
+
+.found-stays {
+  font-size: var(--fs-14);
+  color: var(--clr-gray-1-text);
+}
+
+.super-host {
+  color: var(--clr-gray-1-text);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-10);
+  text-transform: uppercase;
+}
+
+.description {
+  font-size: var(--fs-12);
+  color: var(--clr-gray-2-text);
+}
+
+.rating {
+  color: var(--clr-gray-1-text);
+  font-size: var(--fs-12);
+}
+
+.info {
+  font-size: var(--fs-14);
+  font-weight: var(--fw-semi-bold);
+}
+
+/* ================== */
+/* Utility styles */
 /* ================== */
