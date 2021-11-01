@@ -1,0 +1,15 @@
+.city-pick {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-14);
+  font-weight: var(--fw-regular);
+  cursor: pointer;
+}
+
+.city-pick:hover,
+.city-pick:focus {
+  font-weight: var(--fw-bold);
+}
+
+.city-pick:active {
+  color: var(--clr-star-red);
+}

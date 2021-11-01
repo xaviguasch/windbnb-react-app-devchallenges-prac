@@ -55,6 +55,12 @@ const Search = () => {
     setNumChildren((prev) => prev + 1)
   }
 
+  const selectCity = (city) => {
+    setCity(city)
+    setGuestManager(true)
+    setCityPicker(false)
+  }
+
   return (
     <div>
       <div className='search' onClick={searchHandler}>
@@ -81,7 +87,7 @@ const Search = () => {
               Add Guests
             </button>
           </div>
-          {cityPicker && <CityPicker city={city} />}
+          {cityPicker && <CityPicker selectCity={selectCity} />}
           {guestManager && (
             <GuestManager
               numAdult={numAdult}

@@ -2,18 +2,32 @@ import React from 'react'
 
 import './CityPicker.css'
 
-const CityPicker = ({ city }) => {
+const CityPicker = ({ selectCity }) => {
   const selectCityHandler = (e) => {
     const [value] = e.target.innerText.split(',')
-    console.log(value)
+    const selectedCity = value.slice(5)
+
+    selectCity(selectedCity)
   }
 
   return (
     <div className='CityPicker'>
-      <p onClick={selectCityHandler}>Helsinki, Finland</p>
-      <p onClick={selectCityHandler}>Turku, Finland</p>
-      <p onClick={selectCityHandler}>Oulu, Finland</p>
-      <p onClick={selectCityHandler}>Vaasa, Finland</p>
+      <p className='city-pick' onClick={selectCityHandler}>
+        <span className='material-icons-round'>place</span>
+        Helsinki, Finland
+      </p>
+      <p className='city-pick' onClick={selectCityHandler}>
+        <span className='material-icons-round'>place</span>
+        Turku, Finland
+      </p>
+      <p className='city-pick' onClick={selectCityHandler}>
+        <span className='material-icons-round'>place</span>
+        Oulu, Finland
+      </p>
+      <p className='city-pick' onClick={selectCityHandler}>
+        <span className='material-icons-round'>place</span>
+        Vaasa, Finland
+      </p>
     </div>
   )
 }
