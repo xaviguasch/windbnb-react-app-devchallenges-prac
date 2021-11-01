@@ -60,6 +60,8 @@
   --clr-white: hsl(0, 0%, 100%);
 
   --clr-star-red: hsla(0, 79%, 63%, 0.72);
+  --clr-button-red: hsla(0, 79%, 63%, 0.9);
+  --clr-button-red-hover: hsla(0, 72%, 69%, 0.9);
 }
 
 body {

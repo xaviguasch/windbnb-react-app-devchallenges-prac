@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState } from 'react'
 
 import Gallery from './components/Gallery'
 import Search from './components/Search'
@@ -6,6 +6,34 @@ import Search from './components/Search'
 import './App.css'
 
 function App() {
+  const [city, setCity] = useState('Helsinki')
+  const [numAdult, setNumAdult] = useState(0)
+  const [numChildren, setNumChildren] = useState(0)
+
+  const selectCity = (city) => {
+    setCity(city)
+  }
+
+  const subtractAdults = () => {
+    if (numAdult > 0) {
+      setNumAdult((prev) => prev - 1)
+    }
+  }
+
+  const addAdults = () => {
+    setNumAdult((prev) => prev + 1)
+  }
+
+  const subtractChildren = () => {
+    if (numChildren > 0) {
+      setNumChildren((prev) => prev - 1)
+    }
+  }
+
+  const addChildren = () => {
+    setNumChildren((prev) => prev + 1)
+  }
+
   return (
     <div className='App'>
       <div className='logo'>
@@ -27,7 +55,16 @@ function App() {
         </svg>
       </div>
 
-      <Search />
+      <Search
+        selectCity={selectCity}
+        city={city}
+        numAdult={numAdult}
+        numChildren={numChildren}
+        addAdults={addAdults}
+        addChildren={addChildren}
+        subtractAdults={subtractAdults}
+        subtractChildren={subtractChildren}
+      />
       <Gallery />
 
       <p className='signature'>

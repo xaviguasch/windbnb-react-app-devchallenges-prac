@@ -10,7 +10,7 @@
 }
 
 .search .btn {
-  width: 100%;
+  /* width: 100%; */
   background: transparent;
   border: none;
   cursor: pointer;
@@ -18,21 +18,51 @@
 
 .search .btn--city,
 .search .btn--guests {
-  padding: 1em 1.15em;
+  padding: 1em 0.5em;
 
   color: var(--clr-dark-text);
   font-family: var(--ff-secondary);
   font-size: var(--fs-14);
   font-weight: var(--fw-regular);
   border-right: 1px solid hsl(0, 0%, 95%);
+  flex: 3;
 }
 
 .search .btn--guests {
   color: var(--clr-placeholder-text);
+  flex: 2;
 }
 
 .search .btn--icon {
-  width: 50%;
+  flex: 1;
+}
+
+.search-btn-area {
+  margin-top: 10em;
+}
+
+.btn--main {
+  background: var(--clr-button-red);
+  border: none;
+  border-radius: 1em;
+  font-family: inherit;
+  color: var(--clr-white);
+
+  padding: 0.75em 2.15em;
+
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6em;
+
+  cursor: pointer;
+}
+
+.btn--main:hover,
+.btn--main:active {
+  background: var(--clr-button-red-hover);
 }
 
 .overlay {
@@ -84,4 +114,11 @@
 
 .search--overlay .btn--city {
   border-bottom: 1px solid hsl(0, 0%, 95%);
+}
+
+.icon-search {
+  padding-top: 0.25em;
+  color: var(--clr-white);
+  font-size: var(--fs-28);
+  margin-top: -0.25em;
 }

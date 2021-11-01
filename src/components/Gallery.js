@@ -6,9 +6,6 @@ import Apartment from './Apartment'
 import './Gallery.css'
 
 const Gallery = (props) => {
-  const [city, setCity] = useState('')
-  const [guests, setGuests] = useState(0)
-
   return (
     <div className='Gallery'>
       <div className='row'>
