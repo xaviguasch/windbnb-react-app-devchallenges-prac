@@ -1,6 +1,7 @@
 import { useState } from 'react'
 
 import GuestManager from './GuestManager'
+import CityPicker from './CityPicker'
 
 import './Search.css'
 
@@ -11,6 +12,7 @@ const Search = () => {
 
   const [numAdult, setNumAdult] = useState(0)
   const [numChildren, setNumChildren] = useState(0)
+  const [city, setCity] = useState('Helsinki')
 
   // stops scrolling when the overlay is open
   if (expanded) {
@@ -59,7 +61,7 @@ const Search = () => {
         <button className='btn btn--city'>City, Country</button>
         <button className='btn btn--guests'>Add Guests</button>
         <button className='btn btn--icon'>
-          <span class='material-icons-round'>search</span>
+          <span className='material-icons-round'>search</span>
         </button>
       </div>
 
@@ -68,7 +70,7 @@ const Search = () => {
           <div className='ov__header'>
             <p className='ov__text'>Edit your search</p>
             <button className='btn btn--overlay' onClick={searchHandler}>
-              <span class='material-icons-round'>close</span>
+              <span className='material-icons-round'>close</span>
             </button>
           </div>
           <div className='search search--overlay'>
@@ -79,7 +81,7 @@ const Search = () => {
               Add Guests
             </button>
           </div>
-          {cityPicker && <h2>CITYPICKER</h2>}
+          {cityPicker && <CityPicker city={city} />}
           {guestManager && (
             <GuestManager
               numAdult={numAdult}

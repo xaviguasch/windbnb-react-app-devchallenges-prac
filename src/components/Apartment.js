@@ -24,7 +24,7 @@ const Apartment = ({
           </p>
         </div>
         <p className='star-rating'>
-          <span class='material-icons-round'>star</span>{' '}
+          <span className='material-icons-round'>star</span>{' '}
           <span className='rating'>{rating}</span>
         </p>
       </div>
