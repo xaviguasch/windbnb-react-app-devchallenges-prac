@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React from 'react'
 
 import { DATA } from '../assets/stays.js'
 import Apartment from './Apartment'
@@ -6,7 +6,7 @@ import Apartment from './Apartment'
 import './Gallery.css'
 
 const Gallery = ({ totalGuests, city }) => {
-  const filteredData = DATA.filter((d) => d.maxGuests >= totalGuests && d.city === city)
+  const filteredData = DATA.filter((d) => d.city === city && d.maxGuests >= totalGuests)
 
   console.log(filteredData)
 

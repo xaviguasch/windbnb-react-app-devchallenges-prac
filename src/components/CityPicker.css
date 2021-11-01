@@ -1,8 +1,22 @@
+.CityPicker {
+  margin-top: 2em;
+  margin-left: 1.5em;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.875em;
+}
+
 .city-pick {
   font-family: var(--ff-secondary);
   font-size: var(--fs-14);
   font-weight: var(--fw-regular);
   cursor: pointer;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.625em;
 }
 
 .city-pick:hover,
@@ -10,6 +24,12 @@
   font-weight: var(--fw-bold);
 }
 
-.city-pick:active {
+.place-icon {
+  font-size: var(--fs-24);
+  color: var(--clr-gray-1-text);
+}
+
+.city-pick:active,
+.place-icon:active {
   color: var(--clr-star-red);
 }

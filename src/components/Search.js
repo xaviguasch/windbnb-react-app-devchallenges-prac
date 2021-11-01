@@ -60,7 +60,7 @@ const Search = ({
           </div>
           <div className='search search--overlay'>
             <button className='btn btn--city' onClick={cityHandler}>
-              {city}, Country
+              {city}, Finland
             </button>
             <button className='btn btn--guests' onClick={guestManagerHandler}>
               Add Guests
