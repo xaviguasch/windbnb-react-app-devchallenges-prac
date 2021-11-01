@@ -5,16 +5,20 @@ import Apartment from './Apartment'
 
 import './Gallery.css'
 
-const Gallery = (props) => {
+const Gallery = ({ totalGuests, city }) => {
+  const filteredData = DATA.filter((d) => d.maxGuests >= totalGuests && d.city === city)
+
+  console.log(filteredData)
+
   return (
     <div className='Gallery'>
       <div className='row'>
         <h2 className='title'>Stays in Findland</h2>
-        <p className='found-stays'>num of stays</p>
+        <p className='found-stays'>{filteredData.length}+ stays</p>
       </div>
 
       <div className='apartments'>
-        {DATA.map((d) => (
+        {filteredData.map((d) => (
           <Apartment
             key={d.title}
             city={d.city}

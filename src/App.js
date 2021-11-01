@@ -10,6 +10,8 @@ function App() {
   const [numAdult, setNumAdult] = useState(0)
   const [numChildren, setNumChildren] = useState(0)
 
+  const totalGuests = numAdult + numChildren
+
   const selectCity = (city) => {
     setCity(city)
   }
@@ -65,7 +67,7 @@ function App() {
         subtractAdults={subtractAdults}
         subtractChildren={subtractChildren}
       />
-      <Gallery />
+      <Gallery totalGuests={totalGuests} city={city} />
 
       <p className='signature'>
         Created by <a href='https://github.com/xaviguasch'>xaviguasch</a> -
