@@ -1,0 +1,45 @@
+.GuestManager {
+  margin: 2.25em auto 0;
+  width: 35%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.guest-picker {
+  text-align: left;
+}
+
+.picker {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.9em;
+
+  margin-top: 0.75em;
+}
+
+.btn--gm-picker {
+  padding: 0.1em 0.35em;
+  background: transparent;
+  color: var(--clr-gray-2-text);
+  border-radius: 0.25em;
+  font-size: var(--fs-16);
+  border: 1px solid var(--clr-gray-2-text);
+}
+
+.gp__text,
+.gp__num {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-14);
+}
+
+.gp__text {
+  font-weight: var(--fw-bold);
+}
+
+.gp__text--greyed {
+  font-weight: var(--fw-regular);
+  color: var(--clr-placeholder-text);
+}

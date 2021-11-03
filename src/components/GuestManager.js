@@ -29,22 +29,30 @@ const GuestManager = ({
   return (
     <div className='GuestManager'>
       <div className='guest-picker'>
-        <p>Adults</p>
-        <p>Ages 13 or above</p>
+        <p className='gp__text'>Adults</p>
+        <p className='gp__text gp__text--greyed'>Ages 13 or above</p>
         <div className='picker'>
-          <button onClick={subtractAdultHandler}>-</button>
-          <span>{numAdult}</span>
-          <button onClick={addAdultHandler}>+</button>
+          <button className='btn--gm-picker' onClick={subtractAdultHandler}>
+            &#8722;
+          </button>
+          <span className='gp__num'>{numAdult}</span>
+          <button className='btn--gm-picker' onClick={addAdultHandler}>
+            &#43;
+          </button>
         </div>
       </div>
 
       <div className='guest-picker'>
-        <p>Adults</p>
-        <p>Ages 13 or above</p>
+        <p className='gp__text'>Adults</p>
+        <p className='gp__text gp__text--greyed'>Ages 13 or above</p>
         <div className='picker'>
-          <button onClick={subtractChildrenHandler}>-</button>
-          <span>{numChildren}</span>
-          <button onClick={addChildrenHandler}>+</button>
+          <button className='btn--gm-picker' onClick={subtractChildrenHandler}>
+            &#8722;
+          </button>
+          <span className='gp__num'>{numChildren}</span>
+          <button className='btn--gm-picker' onClick={addChildrenHandler}>
+            &#43;
+          </button>
         </div>
       </div>
     </div>

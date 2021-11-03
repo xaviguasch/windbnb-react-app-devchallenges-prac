@@ -38,7 +38,11 @@
 }
 
 .search-btn-area {
-  margin-top: 10em;
+  position: absolute;
+
+  bottom: 1.5em;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .btn--main {
