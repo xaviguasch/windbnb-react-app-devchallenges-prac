@@ -43,7 +43,7 @@ const GuestManager = ({
       </div>
 
       <div className='guest-picker'>
-        <p className='gp__text'>Adults</p>
+        <p className='gp__text'>Children</p>
         <p className='gp__text gp__text--greyed'>Ages 13 or above</p>
         <div className='picker'>
           <button className='btn--gm-picker' onClick={subtractChildrenHandler}>
