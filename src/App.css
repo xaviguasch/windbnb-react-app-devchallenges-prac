@@ -9,3 +9,22 @@
 .signature {
   margin-top: 8em;
 }
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */
+
+@media (min-width: 450px) {
+  .App {
+    max-width: 575px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 860px) {
+  .App {
+    max-width: 815px;
+    margin: 0 auto;
+    padding: 1.375em 0 0.5em;
+  }
+}

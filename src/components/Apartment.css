@@ -45,3 +45,14 @@
   margin-top: 0.6em;
   text-align: left;
 }
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */
+
+@media (min-width: 860px) {
+  .apartment {
+    max-width: 390px;
+    width: 100%;
+  }
+}

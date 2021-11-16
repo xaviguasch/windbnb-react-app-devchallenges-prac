@@ -8,8 +8,6 @@ import './Gallery.css'
 const Gallery = ({ totalGuests, city }) => {
   const filteredData = DATA.filter((d) => d.city === city && d.maxGuests >= totalGuests)
 
-  console.log(filteredData)
-
   return (
     <div className='Gallery'>
       <div className='row'>

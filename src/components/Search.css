@@ -126,3 +126,13 @@
   font-size: var(--fs-28);
   margin-top: -0.25em;
 }
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */
+
+@media (min-width: 860px) {
+  .search {
+    margin: 2.5em 0 0;
+  }
+}
