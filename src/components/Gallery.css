@@ -21,13 +21,15 @@
 /* ================== */
 
 @media (min-width: 860px) {
-  .Gallery {
-    max-width: ;
-  }
-
   .apartments {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2em;
+  }
+}
+
+@media (min-width: 1275px) {
+  .apartments {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }

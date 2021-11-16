@@ -143,6 +143,10 @@ ul {
 /* Utility styles */
 /* ================== */
 
+.grey-bg {
+  filter: brightness(30%);
+}
+
 /* ================== */
 /* MEDIA QUERIES */
 /* ================== */

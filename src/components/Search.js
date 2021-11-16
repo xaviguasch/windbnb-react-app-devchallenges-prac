@@ -41,8 +41,8 @@ const Search = ({
   }
 
   return (
-    <div>
-      <div className='search' onClick={searchHandler}>
+    <div className='Search'>
+      <div className='search-el' onClick={searchHandler}>
         <button className='btn btn--city'>{city}, Country</button>
         <button className='btn btn--guests'>Add Guests</button>
         <button className='btn btn--icon'>
@@ -58,7 +58,7 @@ const Search = ({
               <span className='material-icons-round'>close</span>
             </button>
           </div>
-          <div className='search search--overlay'>
+          <div className='search-el search--overlay'>
             <button className='btn btn--city' onClick={cityHandler}>
               {city}, Finland
             </button>
